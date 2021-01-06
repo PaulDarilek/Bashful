@@ -2,11 +2,13 @@
 
 namespace Bashful
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        internal static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(
+                $"Microsoft .NET {Environment.Version} running on {Environment.MachineName} ({Environment.OSVersion}) "
+                );
         }
     }
 }
